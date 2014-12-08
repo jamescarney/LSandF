@@ -1,30 +1,24 @@
-.center.row {
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5%;
-  max-width: 500px; }
+body {
+  background: url("/assets/img/walking.png") no-repeat;
+  background-size: cover; }
 
-.signup-panel {
-  padding: 15px; }
-  .signup-panel i {
-    font-size: 30px;
-    line-height: 50px;
-    color: #999; }
-  .signup-panel form input, .signup-panel form span {
-    height: 50px; }
-  .signup-panel .welcome {
-    font-size: 26px;
-    text-align: center;
-    margin-left: 0; }
-  .signup-panel .button {
-    margin-left: 35%; }
+form {
+  width: 100%;
+  padding-top: 30px; }
+  form label {
+    font-size: 20px; }
+  form input {
+    background: transparent; }
 
-section.active {
-  padding-top: 75px !important; }
+.sign-in {
+  width: 85%;
+  margin: 0 auto; }
 
-p.title {
-  border-bottom: 1px solid #cccccc !important; }
+footer {
+  bottom: 0; }
 
-.content {
-  height: 450px; }
+.question {
+  margin: auto; }
+  .question a {
+    color: black;
+    font-size: 15px; }
