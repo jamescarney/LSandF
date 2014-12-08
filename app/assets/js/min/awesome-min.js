@@ -1,0 +1,1 @@
+function bmiWeight(i,t){return bmiWeight}bmiWeight(200,400);

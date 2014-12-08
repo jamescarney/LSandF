@@ -1,0 +1,91 @@
+<div class="row">
+		    <a href="#" data-reveal-id="myModal" class="button">Launch Signup Modal</a>
+				<div id="myModal" class="reveal-modal remove-whitespace animated bounceIn" data-reveal>
+				<div class="row">
+				    <div class="large-6 columns auth-plain">
+				      <div class="signup-panel left-solid">
+				        <p class="welcome">Registered Users</p>
+				        <form>
+				          <div class="row collapse">
+				            <div class="small-2  columns">
+				              <span class="prefix"><i class="fa fa-user fa-2x"></i></span>
+				            </div>
+				            <div class="small-10  columns">
+				              <input type="text" placeholder="username">
+				            </div>
+				          </div>
+				          <div class="row collapse">
+				            <div class="small-2 columns ">
+				              <span class="prefix"><i class="fa fa-lock fa-2x"></i></span>
+				            </div>
+				            <div class="small-10 columns ">
+				              <input type="text" placeholder="password">
+				            </div>
+				          </div>
+				        </form>
+				        <a href="#" class="button ">Log In </a>
+				      </div>
+				    </div>
+
+				    <div class="large-6 columns auth-plain">
+				    	<div class="signup-panel newusers">
+				    		<p class="welcome"> New User?</p>
+				    		<p>By creating an account with us, you will be able to track your weight, BMI, body fat percentage, your workouts and much more.</p><br>
+				    		<a href="#" class="button success">Sign Up</a></br>
+				    	</div>
+				    </div>
+
+				   </div>   
+				  <a class="close-reveal-modal">&#215;</a>
+				</div>
+			    <div class="column assessments">
+			      <h1>Assessments</h1>
+			      <p class="lead">Start here so you will know what type of path you should do. This will be good for </p>
+				    <div id="bmi" class="bmi">  
+  			      <h2>BMI</h2>
+  			      <form>
+  						  <div class="row">
+  						    <div class="small-6 columns">
+  						      <label>Height (feet)
+  						        <select>
+  						          <option value="4-feet">4'</option>
+  						          <option value="5-feet">5'</option>
+  						          <option value="6-feet">6'</option>
+  						          <option value="7-feet">7'</option>
+  						        </select>
+  						      </label>
+  						    </div>
+  						    <div class="small-6 columns">
+  						      <label>Height (inches)
+  						        <select>
+  						          <option value="1-inch">1"</option>
+  						          <option value="2-inch">2"</option>
+  						          <option value="3-inch">3"</option>
+  						          <option value="4-inch">4"</option>
+  						          <option value="5-inch">5"</option>
+  						          <option value="6-inch">6"</option>
+  						          <option value="7-inch">7"</option>
+  						          <option value="8-inch">8"</option>
+  						          <option value="9-inch">9"</option>
+  						          <option value="10-inch">10"</option>
+  						          <option value="11-inch">11"</option>
+  						          <option value="12-inch">12"</option>
+  						        </select>
+  						      </label>
+  						    </div>
+  						  </div>
+  						  <div class="row">
+  						    <div class="large-12 columns">
+  						      <label>Weight (lbs)
+  						        <input type="text" placeholder="200 lbs" />
+  						      </label>
+  						    </div>
+  						  </div>
+  					  </form>
+  					<a href="#" class="button success">Find out your BMI</a>
+  					<div class="bmi-result text-center">
+  						<h3>Your BMI is...</h3>
+  						<p class="lead animated bounce">30!</p>
+  					</div>
+					</div>
+	      </div>
