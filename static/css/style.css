@@ -4,10 +4,99 @@ General (Mixings and Variables)
 /******************************************************************************
 General (Generic Moc Up)
 ******************************************************************************/
+h1, h2, h3, h4, h5, h6, p {
+  color: white; }
+
+body {
+  background: url("/img/background/greywall.png") fixed;
+  background-size: cover;
+  font-size: 1.5em; }
+
 .panel {
-  background: #efefef; }
+  background: #4d505b;
+  border: transparent;
+  border-radius: 5px; }
+  .panel h1, .panel p {
+    font-weight: strong;
+    color: white; }
+
+.featured-widget img {
+  border-radius: 5px;
+  height: 250px; }
+
+.subheader {
+  color: #eee; }
 
 .slider {
   height: 300px;
   background: #369;
   margin-bottom: 20px; }
+
+footer {
+  background: #ccc; }
+
+/******************************************************************************
+Navbar
+******************************************************************************/
+.contain-to-grid {
+  background: #4d505b; }
+  .contain-to-grid nav {
+    background: #4d505b; }
+    .contain-to-grid nav section {
+      background: #4d505b; }
+  .contain-to-grid .top-bar-section {
+    background: #4d505b; }
+    .contain-to-grid .top-bar-section ul > li {
+      background: #4d505b; }
+      .contain-to-grid .top-bar-section ul > li > a {
+        background: #4d505b; }
+
+/******************************************************************************
+Widgets
+******************************************************************************/
+.featured h1, .featured h2, .featured h3, .featured h4, .featured h5, .featured h6, .featured p {
+  color: white; }
+
+.archive-widget ul {
+  list-style-type: none; }
+  .archive-widget ul a {
+    color: red; }
+
+.signup-widget label {
+  font-size: 17px;
+  font-weight: 500; }
+
+/******************************************************************************
+Blog
+******************************************************************************/
+.main-row h2 {
+  color: white; }
+
+.main-column {
+  background: #333; }
+
+.blog-excerpt {
+  color: white; }
+  .blog-excerpt a {
+    color: tomato; }
+  .blog-excerpt p {
+    padding-top: 10px; }
+
+/******************************************************************************
+Recipes
+******************************************************************************/
+.featured-ul {
+  list-style-type: none; }
+  .featured-ul li {
+    color: #D9411E;
+    font-size: 20px;
+    font-weight: bold; }
+
+.recipe-excerpt {
+  padding-top: 15px; }
+
+/******************************************************************************
+Footer
+******************************************************************************/
+.footer-widget h1, .footer-widget h2, .footer-widget h3, .footer-widget h4, .footer-widget h5, .footer-widget h6, .footer-widget p {
+  color: #111; }
