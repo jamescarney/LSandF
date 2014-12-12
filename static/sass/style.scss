@@ -13,17 +13,20 @@ $darkred: #D9411E;
 $red: #CF4858;
 
 
+
 /******************************************************************************
 General (Generic Moc Up)
 ******************************************************************************/
+
+
 
 h1, h2, h3, h4, h5, h6, p {
 	color: white;
 }
 
-
 body {
-	background: url("/img/background/greywall.png") fixed;
+
+	background: url("/img/background/greywall.png");
 	background-size: cover;
 	font-size: 1.5em;
 }
@@ -37,7 +40,6 @@ body {
 		color: white;
 	}
 }
-
 
 .featured-widget {
 	
@@ -57,8 +59,6 @@ body {
 	background: #369;
 	margin-bottom: 20px;
 }
-
-
 
 footer {
 	background: #ccc;
@@ -81,6 +81,7 @@ Navbar
 		}
 		
 	}
+
 	.top-bar-section {
 		background: $featuredbg;
 		ul > li {
@@ -99,11 +100,6 @@ Widgets
 ******************************************************************************/
 
 
-.featured {
-	h1, h2, h3, h4, h5, h6, p {
-		color: white;
-	}
-}
 
 .archive-widget {
 	ul {
@@ -127,6 +123,8 @@ Widgets
 /******************************************************************************
 Blog
 ******************************************************************************/
+
+
 
 .main-row {
 	h2 {
@@ -180,8 +178,12 @@ Footer
 
 .footer-widget {
 	h1, h2, h3, h4, h5, h6, p {
-		color: #111;
+		color: black;
 	}
+}
+
+.copy-footer {
+	color: #666;
 }
 
 

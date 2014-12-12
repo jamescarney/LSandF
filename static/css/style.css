@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: white; }
 
 body {
-  background: url("/img/background/greywall.png") fixed;
+  background: url("/img/background/greywall.png");
   background-size: cover;
   font-size: 1.5em; }
 
@@ -54,9 +54,6 @@ Navbar
 /******************************************************************************
 Widgets
 ******************************************************************************/
-.featured h1, .featured h2, .featured h3, .featured h4, .featured h5, .featured h6, .featured p {
-  color: white; }
-
 .archive-widget ul {
   list-style-type: none; }
   .archive-widget ul a {
@@ -99,4 +96,7 @@ Recipes
 Footer
 ******************************************************************************/
 .footer-widget h1, .footer-widget h2, .footer-widget h3, .footer-widget h4, .footer-widget h5, .footer-widget h6, .footer-widget p {
-  color: #111; }
+  color: black; }
+
+.copy-footer {
+  color: #666; }
