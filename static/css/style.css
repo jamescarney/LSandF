@@ -8,8 +8,13 @@ h1, h2, h3, h4, h5, h6, p {
   color: white; }
 
 body {
-  background: url("/img/background/greywall.png");
+  background: url("../img/background/greywall.png") no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  top: 0;
+  vertical-align: middle;
+  width: 100%;
   font-size: 1.5em; }
 
 .panel {
