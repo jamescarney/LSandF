@@ -1,5 +1,5 @@
 body {
-  background: url("/assets/img/walking.png") no-repeat;
+  background: url("../img/walking.png") no-repeat;
   background-size: cover; }
 
 form {
@@ -18,7 +18,19 @@ footer {
   bottom: 0; }
 
 .question {
-  margin: auto; }
+  margin: 0 auto; }
   .question a {
-    color: black;
+    color: #eee;
     font-size: 15px; }
+
+a {
+  color: white; }
+
+/******************************************************************************
+Forms
+******************************************************************************/
+form {
+  background: rgba(68, 68, 68, 0.7); }
+
+label {
+  color: white; }

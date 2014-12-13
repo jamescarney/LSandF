@@ -8,6 +8,7 @@ h1, h2, h3, h4, h5, h6, p {
   color: white; }
 
 body {
+  background: grey;
   background: url("../img/background/greywall.png") no-repeat center;
   background-size: cover;
   background-attachment: fixed;
@@ -40,6 +41,9 @@ body {
 footer {
   background: #ccc; }
 
+ul {
+  list-style-type: none; }
+
 /******************************************************************************
 Navbar
 ******************************************************************************/
@@ -55,6 +59,11 @@ Navbar
       background: #4d505b; }
       .contain-to-grid .top-bar-section ul > li > a {
         background: #4d505b; }
+
+.sub-nav {
+  background: #f2f2f2; }
+  .sub-nav dl, .sub-nav dd {
+    color: black; }
 
 /******************************************************************************
 Widgets
@@ -100,7 +109,14 @@ Recipes
 /******************************************************************************
 Footer
 ******************************************************************************/
-.footer-widget h1, .footer-widget h2, .footer-widget h3, .footer-widget h4, .footer-widget h5, .footer-widget h6, .footer-widget p {
+ddfas
+.footer-widget h1, ddfas
+.footer-widget h2, ddfas
+.footer-widget h3, ddfas
+.footer-widget h4, ddfas
+.footer-widget h5, ddfas
+.footer-widget h6, ddfas
+.footer-widget p {
   color: black; }
 
 .copy-footer {

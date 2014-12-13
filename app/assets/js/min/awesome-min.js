@@ -1,1 +1,1 @@
-function bmiWeight(i,t){return bmiWeight}bmiWeight(200,400);
+function welcomeMsg(e){visitorName=prompt(e,""),alert("Welcome "+visitorName+",\n\nYour BMI is...\n\nHey "+visitorName+", don't forget to share this with your friends to see who has the best BMI!")}function bmiResult(e){weight=prompt(e,""),alert("Hey, your BMI is... "+weight)}

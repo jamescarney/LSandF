@@ -26,6 +26,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 body {
 
+	background: grey; // Fall back for image
 	background: url("../img/background/greywall.png") no-repeat center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -70,6 +71,10 @@ footer {
 	background: #ccc;
 }
 
+ul {
+	list-style-type: none;
+}
+
 
 
 /******************************************************************************
@@ -99,6 +104,13 @@ Navbar
 	}
 }
 
+.sub-nav {
+		background: #f2f2f2;
+		dl, dd {
+			color: black;
+		}
+	
+}
 
 
 /******************************************************************************
@@ -173,6 +185,16 @@ Recipes
 .recipe-excerpt {
 	padding-top: 15px;
 }
+
+
+
+/******************************************************************************
+Footer
+******************************************************************************/
+
+
+
+ddfas
 
 
 
