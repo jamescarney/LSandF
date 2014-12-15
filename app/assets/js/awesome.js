@@ -1,5 +1,5 @@
 /******************************************************************************
-BMI FORM
+Lets get it on
 ******************************************************************************/
 
 
@@ -11,16 +11,53 @@ BMI FORM
 	using parsInt to make sure nothing weird happens
  */
 
+var workoutName; //Name of workout when added to workout tracker
+var height; //Height when put into BMI tracker or basic info tracker
+var weight; //Weight when put into BMI tracker or basic info tracker
 
-function bmiCalc(height, weight) {
-	height = prompt("What is your height in inches?");
-	weight = prompt("How much do you weigh in LBS?");
 
-	var bmi = weight / ( height * height ) * 703;
+// workoutName = document.workoutFormName.value;
 
-	console.log("Your BMI is... " + bmi);
-	alert("Your BMI is... " + bmi);
-	document.write('Your BMI is... ' + bmi);
+
+
+
+// function bmiCalc(height, weight) {
+// 	height = prompt("What is your height in inches?");
+// 	weight = prompt("How much do you weigh in LBS?");
+
+// 	var bmi = weight / ( height * height ) * 703;
+
+	
+// 	alert("Your BMI is... " + bmi);
+	
+// }
+
+// bmiCalc();
+
+
+function addWorkout(form) {
+	//add a new table as with workoutName as the caption
+	          var TestVar = form.inputbox.value;
+	// alert("Your workout is added");
+	alert("Added " + TestVar + " to your workout!");
+
 }
 
-bmiCalc();
+// addWorkout();
+
+
+
+/**************************************
+Add workout sets to a table
+**************************************/
+
+function addSet() {
+	alert("Added another set!");
+	console.log("Add another row to the table");
+}
+
+function subtractSet() {
+	alert("Took off a set!");
+	console.log("Take off a row from the table.");
+}
+

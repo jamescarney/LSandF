@@ -1,1 +1,1 @@
-function bmiCalc(o,i){o=prompt("What is your height in inches?"),i=prompt("How much do you weigh in LBS?");var r=i/(o*o)*703;console.log("Your BMI is... "+r),alert("Your BMI is... "+r),document.write("Your BMI is... "+r)}bmiCalc();
+function addWorkout(o){var t=o.inputbox.value;alert("Added "+t+" to your workout!")}function addSet(){alert("Added another set!"),console.log("Add another row to the table")}function subtractSet(){alert("Took off a set!"),console.log("Take off a row from the table.")}var workoutName,height,weight;

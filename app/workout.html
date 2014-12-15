@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Jame Carney Web Developer Portfolio Site">
-    <meta name="author" content="James Carney">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="icon" href="../../favicon.ico">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Jame Carney Web Developer Portfolio Site">
+		<meta name="author" content="James Carney">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<!-- <link rel="icon" href="../../favicon.ico"> -->
 
-    <title>Lifestyle Strength and Fitness | App</title>
+		<title>Lifestyle Strength and Fitness | App</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
 
-    <!-- Custom styles for this template -->
-    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css"> 
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<!-- Custom styles for this template -->
+		
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="bower_components/animate.css/animate.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
-    <!-- Modernizr for older browsers -->
-    <script src="bower_components/foundation/js/vendor/modernizr.js"></script>
-  </head>
+		<!-- Modernizr for older browsers -->
+		<script src="bower_components/foundation/js/vendor/modernizr.js"></script>
+	</head>
 	<body>
 		<div class="wrapper">
 			<div class="off-canvas-wrap" data-offcanvas>
@@ -51,47 +51,52 @@
 							<div class="row">
 								<div class="large-12 columns workouts">
 									<h1>Workout Tracker</h1>
-									<h3>Workout</h3>
+									<h3>Monday</h3>
 									<div class="row">
-										<div class="small-8 columns">
-											<a href="workout.html"><img src="http://placehold.it/200x200" alt=""></a>
+										<div class="medium-8 columns">
+											<img src="http://placehold.it/200x200" alt="">
 										</div>
-										<div class="small-4 columns">
-											<label for="workoutAddition">Workout: <input type="text" name="" id=""></label>
-											<a href="#" class="button success expand">Add</a>
+										<div class="medium-4 columns">
+											<FORM NAME="myform" ACTION="" METHOD="GET">Enter new exercise in box: <BR>
+												<INPUT TYPE="text" NAME="inputbox" VALUE=""><P>
+												<INPUT TYPE="button" NAME="button" Value="Click" onClick="addWorkout(this.form)" class="button success expand">
+											</FORM>
 										</div>
 										<div class="large-12 columns">
-											<table>
-												<caption>Deadlift</caption>
+											<table class="workoutTable rwd-table" id="workoutTable">
+												<caption>Deadlift <a href="#" onclick="addSet()"><i class="fa fa-plus-circle"></i></a> <a href="#" onclick="subtractSet()"><i class="fa fa-minus-circle"></i></a></caption>
+												<!-- The plus and minus will be used to add more sets onto the curent workout. If you hit the minus enough then that whole workout will go away -->
 												<thead>
 													<tr>
-														<th>Sets</th>
-														<th>Reps</th>
-														<th>Weight</th>
-														<th>Time/Break</th>
+														<th id="setNumber">Sets</th>
+														<th id="reps">Reps</th>
+														<th id="weight">Weight</th>
+														<th id="time-break">Time/Break</th>
 													</tr>
 												</thead>
 												<tbody>
 													<tr>
-														<td>1</td>
-														<td><input type="number" name="" id=""></td>
-														<td><input type="number" name="" id=""></td>
-														<td><input type="text" name="" id=""></td>
+														<td data-th="Set">1</td>
+														<td data-th="Reps"><input type="number" name="" id=""></td>
+														<td data-th="Weight"><input type="number" name="" id=""></td>
+														<td data-th="Time/Break"><input type="text" name="" id=""></td>
 													</tr>
 													<tr>
-														<td>2</td>
-														<td><input type="number" name="" id=""></td>
-														<td><input type="number" name="" id=""></td>
-														<td><input type="text" name="" id=""></td>
+														<td data-th="Set">2</td>
+														<td data-th="Reps"><input type="number" name="" id=""></td>
+														<td data-th="Weight"><input type="number" name="" id=""></td>
+														<td data-th="Time/Break"><input type="text" name="" id=""></td>
 													</tr>
 													<tr>
-														<td>3</td>
-														<td><input type="number" name="" id=""></td>
-														<td><input type="number" name="" id=""></td>
-														<td><input type="text" name="" id=""></td>
+														<td data-th="Set">3</td>
+														<td data-th="Reps"><input type="number" name="" id=""></td>
+														<td data-th="Weight"><input type="number" name="" id=""></td>
+														<td data-th="Time/Break"><input type="text" name="" id=""></td>
 													</tr>
 												</tbody>
 											</table>
+											<h3>Recap...</h3>
+											<p class="lead">Your best set was (190 lbs) (5 times) for (deadlift) with a predicted max of (500 lbs). Nice job!</p>
 										</div>
 									</div>
 								</div>
@@ -124,19 +129,12 @@
 		<!-- Placed at the end of the document so the pages load faster -->
 		<script src="bower_components/foundation/js/vendor/jquery.js"></script>
 		<script src="bower_components/foundation/js/vendor/fastclick.js"></script>
-		<script src="slick/slick/slick.min.js"></script>
+		<script src="assets/js/min/awesome-min.js"></script>
 
 		<!-- Core JS for Foundation -->
 		<script src="bower_components/foundation/js/foundation.min.js"></script>
 		<script>
 			$(document).foundation();
-		</script>
-		<script>
-			$(document).ready(function(){
-				$('.slider').slick({
-					$('.single-item').slick();
-				});
-			});
 		</script>
 	</body>
 </html>

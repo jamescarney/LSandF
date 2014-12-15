@@ -1,5 +1,15 @@
+/*
+Styling for the LSandF app. 
+
+
+/******************************************************************************
+General
+******************************************************************************/
+
+
+
 body {
-  background: url( "../img/walking.png") no-repeat;
+  background: url( "../img/walking.png") no-repeat fixed;
   background-size: cover;
 }
 
@@ -30,7 +40,7 @@ footer {
   }
 }
 
-a {
+h1, h2, h3, h4, h5, h6, p, a {
   color: white;
 }
 
@@ -64,5 +74,9 @@ Workouts
   }
 }
 
+
+/**************************************
+Responsive Table 
+**************************************/
 
 
