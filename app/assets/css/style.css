@@ -34,3 +34,13 @@ form {
 
 label {
   color: white; }
+
+/******************************************************************************
+Workouts
+******************************************************************************/
+.workouts {
+  padding-bottom: 20px; }
+  .workouts caption {
+    color: white; }
+  .workouts img {
+    padding: 5px; }

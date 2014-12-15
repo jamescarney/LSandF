@@ -1,1 +1,1 @@
-var height,weight;height=prompt("What is your height in inches?"),weight=prompt("How much do you weigh in LBS?");var bmi=weight/(height*height)*703;console.log("Your BMI is... "+bmi),document.write("Your BMI is... "+bmi);
+function bmiCalc(o,i){o=prompt("What is your height in inches?"),i=prompt("How much do you weigh in LBS?");var r=i/(o*o)*703;console.log("Your BMI is... "+r),alert("Your BMI is... "+r),document.write("Your BMI is... "+r)}bmiCalc();

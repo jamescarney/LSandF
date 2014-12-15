@@ -41,7 +41,7 @@
 						<ul class="off-canvas-list">
 							<li><label>Assessments</label></li>
 							<li><a href="#bmi">BMI</a></li>
-							<li><a href="workout-tracker.html">Workout Tracker</a></li>
+							<li><a href="workout-tracker.html">Weight Tracker</a></li>
 							<li><a href="#">Fitness Tracker</a></li>
 						</ul>
 					</aside>
@@ -49,18 +49,51 @@
 					<section class="main-section">
 						<form>
 							<div class="row">
-								<div class="large-12 columns">
-									<input type="text" placeholder="Email" />
-								</div>
-								<div class="large-12 columns">
-									<input type="password" placeholder="Password" />
-								</div>
-								<div class="sign-in">
-									<a href="home.html" class="button round expand success sign-in">Sign In</a>
-								</div>
-								<div class="columns question text-center">
-									<p><a href="#">Forgot your password?</a></p>
-									<p><a href="#">Sign up.</a></p>
+								<div class="large-12 columns workouts">
+									<h1>Workout Tracker</h1>
+									<h3>Workout</h3>
+									<div class="row">
+										<div class="small-8 columns">
+											<a href="workout.html"><img src="http://placehold.it/200x200" alt=""></a>
+										</div>
+										<div class="small-4 columns">
+											<label for="workoutAddition">Workout: <input type="text" name="" id=""></label>
+											<a href="#" class="button success expand">Add</a>
+										</div>
+										<div class="large-12 columns">
+											<table>
+												<caption>Deadlift</caption>
+												<thead>
+													<tr>
+														<th>Sets</th>
+														<th>Reps</th>
+														<th>Weight</th>
+														<th>Time/Break</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>1</td>
+														<td><input type="number" name="" id=""></td>
+														<td><input type="number" name="" id=""></td>
+														<td><input type="text" name="" id=""></td>
+													</tr>
+													<tr>
+														<td>2</td>
+														<td><input type="number" name="" id=""></td>
+														<td><input type="number" name="" id=""></td>
+														<td><input type="text" name="" id=""></td>
+													</tr>
+													<tr>
+														<td>3</td>
+														<td><input type="number" name="" id=""></td>
+														<td><input type="number" name="" id=""></td>
+														<td><input type="text" name="" id=""></td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+									</div>
 								</div>
 							</div>
 						</form> 
@@ -77,6 +110,7 @@
 							</div>
 						</footer>
 					</section>
+					<!-- /Keep everything in here -->
 
 					<a class="exit-off-canvas"></a>
 				</div> <!-- inner wrap -->

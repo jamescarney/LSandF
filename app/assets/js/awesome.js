@@ -12,13 +12,15 @@ BMI FORM
  */
 
 
-var height;
-var weight;
-height = prompt("What is your height in inches?");
-weight = prompt("How much do you weigh in LBS?");
+function bmiCalc(height, weight) {
+	height = prompt("What is your height in inches?");
+	weight = prompt("How much do you weigh in LBS?");
 
-var bmi = weight / ( height * height ) * 703;
+	var bmi = weight / ( height * height ) * 703;
 
-console.log("Your BMI is... " + bmi);
+	console.log("Your BMI is... " + bmi);
+	alert("Your BMI is... " + bmi);
+	document.write('Your BMI is... ' + bmi);
+}
 
-document.write('Your BMI is... ' + bmi);
+bmiCalc();
