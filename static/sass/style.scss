@@ -75,6 +75,10 @@ ul {
 	list-style-type: none;
 }
 
+.box-shadow {
+	box-shadow: 0 8px 6px -6px black;
+}
+
 
 
 /******************************************************************************
@@ -105,8 +109,8 @@ Navbar
 }
 
 .sub-nav {
-		background: #f2f2f2;
-		dl, dd {
+		background: #ddd;
+		dd {
 			color: black;
 		}
 	
@@ -151,7 +155,7 @@ Blog
 }
 
 .main-column {
-	background: #333;
+	background: lighten(#333, 5%);
 }
 
 .blog-excerpt {

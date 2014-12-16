@@ -40,7 +40,25 @@ function addWorkout(form) {
 	          var TestVar = form.inputbox.value;
 	// alert("Your workout is added");
 	alert("Added " + TestVar + " to your workout!");
+}
 
+function addWorkoutTable() {
+	//Get string from workoutform
+	workoutName = document.getElementById('workoutInput').value;
+		
+	//Test
+	alert('Added your stuff ' + workoutName + '\n\n This is a first test');
+
+	//Add new table with caption of workoutName
+	var newTable = document.createElement("div"); 
+	var newCaption = document.createTextNode(workoutName);
+
+	//when added the table will slide into place
+	var tableSlide = document.getElementById('workoutTable');
+
+	tableSlide.className = tableSlide.className + " animated bounceInLeft";
+
+	
 }
 
 // addWorkout();
@@ -60,4 +78,56 @@ function subtractSet() {
 	alert("Took off a set!");
 	console.log("Take off a row from the table.");
 }
+
+
+
+
+
+
+
+
+/**************
+Random Junk
+**************/
+
+//Stuff I test out to see if it works. Real basic. If it does, then I move it up the latter. If it doesn't... Well. Lets not talk about that.
+
+
+
+function test() {
+	console.log('Begin function');
+	//Declare the node you want to clone
+	var exerciseTable = document.getElementById('workoutTable');
+	console.log('grab table');
+	console.log(exerciseTable);
+
+	var newExercise = exerciseTable.cloneNode(true);
+
+
+	// Create a new paragraph element, and append it to the end of the document
+	// var p = document.createElement("p");
+	console.log('put table into page');
+	document.body.appendChild(newExercise);
+	
+
+
+
+	return alert('complete');
+}
+
+
+// addWorkoutTable(this.form)
+
+
+
+
+
+
+
+
+
+
+
+
+
 

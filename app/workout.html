@@ -57,13 +57,13 @@
 											<img src="http://placehold.it/200x200" alt="">
 										</div>
 										<div class="medium-4 columns">
-											<FORM NAME="myform" ACTION="" METHOD="GET">Enter new exercise in box: <BR>
-												<INPUT TYPE="text" NAME="inputbox" VALUE=""><P>
-												<INPUT TYPE="button" NAME="button" Value="Click" onClick="addWorkout(this.form)" class="button success expand">
+											<FORM NAME="myform" ACTION="" METHOD="GET">Enter new exercise: <BR>
+												<INPUT TYPE="text" NAME="inputbox" VALUE="" id="workoutInput">
+												<INPUT TYPE="button" NAME="button" Value="Add" onClick="test()" class="button success expand">
 											</FORM>
 										</div>
-										<div class="large-12 columns">
-											<table class="workoutTable rwd-table" id="workoutTable">
+										<div class="main-workout large-12 columns">
+											<table class="workoutTable rwd-table animated bounceInLeft" id="workoutTable">
 												<caption>Deadlift <a href="#" onclick="addSet()"><i class="fa fa-plus-circle"></i></a> <a href="#" onclick="subtractSet()"><i class="fa fa-minus-circle"></i></a></caption>
 												<!-- The plus and minus will be used to add more sets onto the curent workout. If you hit the minus enough then that whole workout will go away -->
 												<thead>

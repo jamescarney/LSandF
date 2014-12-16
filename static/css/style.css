@@ -44,6 +44,9 @@ footer {
 ul {
   list-style-type: none; }
 
+.box-shadow {
+  box-shadow: 0 8px 6px -6px black; }
+
 /******************************************************************************
 Navbar
 ******************************************************************************/
@@ -61,8 +64,8 @@ Navbar
         background: #4d505b; }
 
 .sub-nav {
-  background: #f2f2f2; }
-  .sub-nav dl, .sub-nav dd {
+  background: #ddd; }
+  .sub-nav dd {
     color: black; }
 
 /******************************************************************************
@@ -84,7 +87,7 @@ Blog
   color: white; }
 
 .main-column {
-  background: #333; }
+  background: #404040; }
 
 .blog-excerpt {
   color: white; }
