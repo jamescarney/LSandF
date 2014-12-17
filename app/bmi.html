@@ -7,6 +7,7 @@
     <meta name="description" content="Jame Carney Web Developer Portfolio Site">
     <meta name="author" content="James Carney">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
     <link rel="icon" href="../../favicon.ico">
 
     <title>Lifestyle Strength and Fitness | App</title>
@@ -55,7 +56,7 @@
 					<div class="row">
 						<div class="small-6 columns">
 							<label>Height (feet)
-								<select>
+								<select id="heightFeet">
 									<option name="feet" value="48">4'</option>
 									<option name="feet" value="60">5'</option>
 									<option name="feet" value="72" selected>6'</option>
@@ -65,7 +66,7 @@
 						</div>
 						<div class="small-6 columns">
 							<label>Height (inches)
-								<select>
+								<select id="heightInches">
 									<option name = "inches" value="1">1"</option>
 									<option name = "inches" value="2">2"</option>
 									<option name = "inches" value="3" selected>3"</option>
@@ -84,16 +85,13 @@
 					<div class="row">
 						<div class="large-12 columns">
 							<label>Weight (lbs)
-								<input type="number" placeholder="215" />
+								<input type="number" id="weight" value="215" />
 							</label>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row" id="bmiResults">
 						<div class="large-12 columns">
-							<a href="#"  type="button" onclick="bmiResult('What's your weight);" class="button success expand">Calculate</a>
-						</div>
-						<div class="large-12 columns">
-							<output name="result">Your BMI is... </output>
+							<a href="#"  type="button" onclick="bmiCalc();" class="button success expand radius">Calculate</a>
 						</div>
 					</div>
 				</form>

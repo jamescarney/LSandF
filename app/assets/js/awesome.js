@@ -12,56 +12,93 @@ Lets get it on
  */
 
 var workoutName; //Name of workout when added to workout tracker
-var height; //Height when put into BMI tracker or basic info tracker
+var heightFeet; //Height when put into BMI tracker or basic info tracker
+var heightInches; //Height when put into BMI tracker or basic info tracker
+var height; //Height in inches from
 var weight; //Weight when put into BMI tracker or basic info tracker
 
 
+heightFeet= document.getElementById('heightFeet').value;
+heightInches = document.getElementById('heightInches').value;
+
+height = heightFeet * 12 + heightInches;
 // workoutName = document.workoutFormName.value;
 
 
+/******************************************************************************
+BMI Calc
+******************************************************************************/
 
 
-// function bmiCalc(height, weight) {
-// 	height = prompt("What is your height in inches?");
-// 	weight = prompt("How much do you weigh in LBS?");
 
-// 	var bmi = weight / ( height * height ) * 703;
+
+function bmiCalc(height, weight) {
+
+	// get the height and weight values from the form
+	heightFeet= document.getElementById('heightFeet').value;
+	heightInches = document.getElementById('heightInches').value;
+
+	height = parseFloat(heightFeet) +  parseFloat(heightInches);
+	weight= document.getElementById('weight').value;
+
+
+	console.log("Your height is " + height + " inches. \n\n Your weight is " + weight + " lbs." );
+	// calc your BMI
+	var bmi = weight / ( height * height ) * 703;
 
 	
-// 	alert("Your BMI is... " + bmi);
+	alert("Your BMI is... " + bmi);
+
+
+	 // create a new div element 
+	  // and give it some content 
+	  var newDiv = document.createElement("div"); 
+	  var newContent = document.createTextNode("BMI: " + bmi); 
+	  newDiv.appendChild(newContent); //add the text node to the newly created div. 
+
+	  // add the newly created element and its content into the DOM 
+	  var currentDiv = document.getElementById("bmiResults"); 
+	  // document.body.insertBefore(newDiv, currentDiv); 
 	
-// }
-
-// bmiCalc();
-
-
-function addWorkout(form) {
-	//add a new table as with workoutName as the caption
-	          var TestVar = form.inputbox.value;
-	// alert("Your workout is added");
-	alert("Added " + TestVar + " to your workout!");
+	return console.log('end program');
 }
 
-function addWorkoutTable() {
+
+
+
+
+
+
+
+/******************************************************************************
+Added table
+******************************************************************************/
+//added table to workout.html after click
+
+
+
+function addWorkoutTable(workoutName) {
+
+	console.log("Begin function");
 	//Get string from workoutform
 	workoutName = document.getElementById('workoutInput').value;
 		
-	//Test
-	alert('Added your stuff ' + workoutName + '\n\n This is a first test');
+	//Declare node and make it show up in the table
+	var exerciseTable = document.getElementById('workoutTable');
+	console.log(exerciseTable); //Checking to see if I grabbed the node propperly
+	var newExercise = exerciseTable.cloneNode(true);
 
-	//Add new table with caption of workoutName
-	var newTable = document.createElement("div"); 
-	var newCaption = document.createTextNode(workoutName);
+	document.body.appendChild(newExercise);
 
 	//when added the table will slide into place
 	var tableSlide = document.getElementById('workoutTable');
 
+
+	//added animatino for when the new table is added
 	tableSlide.className = tableSlide.className + " animated bounceInLeft";
 
 	
 }
-
-// addWorkout();
 
 
 
@@ -82,10 +119,6 @@ function subtractSet() {
 
 
 
-
-
-
-
 /**************
 Random Junk
 **************/
@@ -94,26 +127,7 @@ Random Junk
 
 
 
-function test() {
-	console.log('Begin function');
-	//Declare the node you want to clone
-	var exerciseTable = document.getElementById('workoutTable');
-	console.log('grab table');
-	console.log(exerciseTable);
 
-	var newExercise = exerciseTable.cloneNode(true);
-
-
-	// Create a new paragraph element, and append it to the end of the document
-	// var p = document.createElement("p");
-	console.log('put table into page');
-	document.body.appendChild(newExercise);
-	
-
-
-
-	return alert('complete');
-}
 
 
 // addWorkoutTable(this.form)

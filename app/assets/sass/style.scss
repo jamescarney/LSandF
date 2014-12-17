@@ -44,6 +44,13 @@ h1, h2, h3, h4, h5, h6, p, a {
   color: white;
 }
 
+ul {
+  list-style-type: none;
+}
+
+.off-canvas-wrap {
+  overflow-y: scroll;
+}
 
 /******************************************************************************
 Forms
