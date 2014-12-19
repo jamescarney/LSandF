@@ -5,12 +5,8 @@ Styling for the LSandF app.
 /******************************************************************************
 General
 ******************************************************************************/
-body {
-  background: url("../img/walking.png") no-repeat fixed;
-  background-size: cover; }
-
 .main-section {
-  background: rgba(68, 68, 68, 0.3); }
+  background: #eee; }
 
 form {
   width: 100%;
@@ -19,10 +15,6 @@ form {
     font-size: 20px; }
   form input {
     background: transparent; }
-
-.sign-in {
-  width: 85%;
-  margin: 0 auto; }
 
 footer {
   bottom: 0; }
@@ -34,7 +26,7 @@ footer {
     font-size: 15px; }
 
 h1, h2, h3, h4, h5, h6, p, a {
-  color: blue; }
+  color: tomato; }
 
 .title {
   color: white; }
@@ -48,11 +40,8 @@ ul {
 /******************************************************************************
 Forms
 ******************************************************************************/
-form {
-  background: rgba(68, 68, 68, 0.7); }
-
 label {
-  color: white; }
+  color: lightgrey; }
 
 /******************************************************************************
 Workouts
@@ -60,10 +49,17 @@ Workouts
 .workouts {
   padding-bottom: 20px; }
   .workouts caption {
-    color: white; }
+    color: grey; }
   .workouts img {
     padding: 5px; }
 
 /**************************************
 Responsive Table 
 **************************************/
+/******************************************************************************
+Home/Profile
+******************************************************************************/
+.home-profile {
+  padding-top: 30px; }
+  .home-profile img {
+    border-radius: 6px; }

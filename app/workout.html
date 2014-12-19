@@ -31,7 +31,6 @@
 						<section class="left-small">
 							<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
 						</section>
-
 						<section class="middle tab-bar-section">
 							<h1 class="title">Lifestyle Strength and Fitness</h1>
 						</section>
@@ -62,9 +61,9 @@
 												<INPUT TYPE="button" NAME="button" Value="Add" onClick="addWorkoutTable()" class="button success expand">
 											</FORM>
 										</div>
-										<div class="main-workout large-12 columns">
+										<div class="main-workout large-12 columns" id="main-workout">
 											<table class="workoutTable rwd-table animated bounceInLeft" id="workoutTable">
-												<caption>Deadlift <a href="#" onclick="addSet()"><i class="fa fa-plus-circle"></i></a> <a href="#" onclick="subtractSet()"><i class="fa fa-minus-circle"></i></a></caption>
+												<caption id='workoutTableCaption'>Deadlift <a href="#" onclick="addSet()"><i class="fa fa-plus-circle"></i></a> <a href="#" onclick="subtractSet()"><i class="fa fa-minus-circle"></i></a></caption>
 												<!-- The plus and minus will be used to add more sets onto the curent workout. If you hit the minus enough then that whole workout will go away -->
 												<thead>
 													<tr>
@@ -95,9 +94,10 @@
 													</tr>
 												</tbody>
 											</table>
-											<h3>Recap...</h3>
-											<p class="lead">Your best set was (190 lbs) (5 times) for (deadlift) with a predicted max of (500 lbs). Nice job!</p>
+											
 										</div>
+										<h3>Recap...</h3>
+											<p class="lead">Your best set was (190 lbs) (5 times) for (deadlift) with a predicted max of (500 lbs). Nice job!</p>
 									</div>
 								</div>
 							</div>

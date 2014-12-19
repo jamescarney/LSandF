@@ -16,7 +16,7 @@ var heightFeet; //Height when put into BMI tracker or basic info tracker
 var heightInches; //Height when put into BMI tracker or basic info tracker
 var height; //Height in inches from
 var weight; //Weight when put into BMI tracker or basic info tracker
-
+var workoutCaption; //Name of workout when someone adds an exercise 
 
 heightFeet= document.getElementById('heightFeet').value;
 heightInches = document.getElementById('heightInches').value;
@@ -83,12 +83,15 @@ function addWorkoutTable(workoutName) {
 	//Get string from workoutform
 	workoutName = document.getElementById('workoutInput').value;
 		
+
+		//Get the .main-workout to append the new table at the end of a table
+		var mainWorkoutSection = document.getElementById('main-workout');		
 	//Declare node and make it show up in the table
 	var exerciseTable = document.getElementById('workoutTable');
-	console.log(exerciseTable); //Checking to see if I grabbed the node propperly
+
 	var newExercise = exerciseTable.cloneNode(true);
 
-	document.body.appendChild(newExercise);
+	mainWorkoutSection.appendChild(newExercise);
 
 	//when added the table will slide into place
 	var tableSlide = document.getElementById('workoutTable');
@@ -100,12 +103,23 @@ function addWorkoutTable(workoutName) {
 	
 }
 
+/**************************************
+Changing the caption of table
+**************************************/
+function captionWorkoutTable() {
+	console.log("Begin Function");
+
+	workoutCaption = document.getElementById("workoutTableCaption");
+	parseString(workoutCaption);
+	
+}
+
 
 
 /**************************************
 Add workout sets to a table
 **************************************/
-
+//Not functional yet. Need to would on this later
 function addSet() {
 	alert("Added another set!");
 	console.log("Add another row to the table");
