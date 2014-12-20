@@ -59,7 +59,7 @@
 											<FORM NAME="myform" ACTION="" METHOD="GET">Enter new exercise: <BR>
 												<INPUT TYPE="text" NAME="inputbox" VALUE="" id="workoutInput">
 												<INPUT TYPE="button" NAME="button" Value="Add" onClick="addWorkoutTable()" class="button success expand">
-											</FORM>
+										 	</FORM>
 										</div>
 										<div class="main-workout large-12 columns" id="main-workout">
 											<table class="workoutTable rwd-table animated bounceInLeft" id="workoutTable">
@@ -127,7 +127,8 @@
 		<!-- JavaScript
 		================================================== -->
 		<!-- Placed at the end of the document so the pages load faster -->
-		<script src="bower_components/foundation/js/vendor/jquery.js"></script>
+		<!-- <script src="bower_components/foundation/js/vendor/jquery.js"></script> -->
+		<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
 		<script src="bower_components/foundation/js/vendor/fastclick.js"></script>
 		<script src="assets/js/min/awesome-min.js"></script>
 

@@ -4,19 +4,13 @@ Lets get it on
 
 
 
-/* 
-	Works now for a pop up form, need to change:
-	the location of where the result is outputed.
-	from popup to using the form
-	using parsInt to make sure nothing weird happens
- */
-
 var workoutName; //Name of workout when added to workout tracker
 var heightFeet; //Height when put into BMI tracker or basic info tracker
 var heightInches; //Height when put into BMI tracker or basic info tracker
 var height; //Height in inches from
 var weight; //Weight when put into BMI tracker or basic info tracker
 var workoutCaption; //Name of workout when someone adds an exercise 
+
 
 heightFeet= document.getElementById('heightFeet').value;
 heightInches = document.getElementById('heightInches').value;
@@ -35,7 +29,7 @@ BMI Calc
 function bmiCalc(height, weight) {
 
 	// get the height and weight values from the form
-	heightFeet= document.getElementById('heightFeet').value;
+	heightFeet= $('#heightFeet').val();
 	heightInches = document.getElementById('heightInches').value;
 
 	height = parseFloat(heightFeet) +  parseFloat(heightInches);
@@ -74,44 +68,56 @@ function bmiCalc(height, weight) {
 Added table
 ******************************************************************************/
 //added table to workout.html after click
+//Need to change the caption to workoutName
 
+
+// Use this to change the name of the caption
+// //Get
+// var bla = $('#txt_name').val();
+
+// //Set
+// $('#txt_name').val('bla');
+// All I need to do is get the workoutName, and then change the value of the caption
 
 
 function addWorkoutTable(workoutName) {
 
 	console.log("Begin function");
-	//Get string from workoutform
-	workoutName = document.getElementById('workoutInput').value;
-		
+	
 
-		//Get the .main-workout to append the new table at the end of a table
-		var mainWorkoutSection = document.getElementById('main-workout');		
-	//Declare node and make it show up in the table
-	var exerciseTable = document.getElementById('workoutTable');
+	//Get name of workout from workoutform
+	workoutName = $('#workoutInput').val();
+	console.log(workoutName); //Works
 
-	var newExercise = exerciseTable.cloneNode(true);
+	//Get the workout table and append it to #main-workout, then clone it beneath	
+	//Get the .main-workout to append the new table at the end of a table
+	var mainWorkoutSection = $('#workoutTable');	
+	console.log(mainWorkoutSection); //Works //This is the table I want to copy.
 
-	mainWorkoutSection.appendChild(newExercise);
+	//Declare where you want to put this new table
+	var exerciseTable = $('#workoutTable');
+	mainWorkoutSection.clone().appendTo('.main-workout'); //works
+
+
+
+	//Get the name of the workout and change the caption of it.
+	var workoutCaption = $("#workoutTableCaption").val();
+	console.log(workoutCaption); //Need to append the workout name value to the caption
+	$('#workoutTableCaption').val(workoutName);
+
+
+
+
+
+
+
 
 	//when added the table will slide into place
-	var tableSlide = document.getElementById('workoutTable');
-
+	var tableSlide = $('#workoutTable');
 
 	//added animatino for when the new table is added
 	tableSlide.className = tableSlide.className + " animated bounceInLeft";
 
-	
-}
-
-/**************************************
-Changing the caption of table
-**************************************/
-function captionWorkoutTable() {
-	console.log("Begin Function");
-
-	workoutCaption = document.getElementById("workoutTableCaption");
-	parseString(workoutCaption);
-	
 }
 
 
