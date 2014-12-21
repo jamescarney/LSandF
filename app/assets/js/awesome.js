@@ -12,7 +12,7 @@ var weight; //Weight when put into BMI tracker or basic info tracker
 var workoutCaption; //Name of workout when someone adds an exercise 
 
 
-heightFeet= document.getElementById('heightFeet').value;
+heightFeet = document.getElementById('heightFeet').value;
 heightInches = document.getElementById('heightInches').value;
 
 height = heightFeet * 12 + heightInches;
@@ -29,14 +29,14 @@ BMI Calc
 function bmiCalc(height, weight) {
 
 	// get the height and weight values from the form
-	heightFeet= $('#heightFeet').val();
-	heightInches = document.getElementById('heightInches').value;
+	heightFeet = $('#heightFeet').val();
+	heightInches = $('#heightInches').val();
 
 	height = parseFloat(heightFeet) +  parseFloat(heightInches);
-	weight= document.getElementById('weight').value;
+	weight = $('#weight').val();
 
 
-	console.log("Your height is " + height + " inches. \n\n Your weight is " + weight + " lbs." );
+	console.log("Your height is " + height + " inches. \nYour weight is " + weight + " lbs.");
 	// calc your BMI
 	var bmi = weight / ( height * height ) * 703;
 
@@ -67,59 +67,64 @@ function bmiCalc(height, weight) {
 /******************************************************************************
 Added table
 ******************************************************************************/
-//added table to workout.html after click
-//Need to change the caption to workoutName
-
-
-// Use this to change the name of the caption
-// //Get
-// var bla = $('#txt_name').val();
-
-// //Set
-// $('#txt_name').val('bla');
-// All I need to do is get the workoutName, and then change the value of the caption
+/*
+added table to workout.html after click
+Need to change the caption to workoutName
+Can get the caption, but it changing only the original table, not the one that
+has been cloned
+*/
 
 
 function addWorkoutTable(workoutName) {
 
-	console.log("Begin function");
-	
+  console.log("Begin function");
 
-	//Get name of workout from workoutform
-	workoutName = $('#workoutInput').val();
-	console.log(workoutName); //Works
+  //Get name of workout from workoutform
+  workoutName = $('#workoutInput').val();
+  console.log(workoutName); //Works
 
-	//Get the workout table and append it to #main-workout, then clone it beneath	
-	//Get the .main-workout to append the new table at the end of a table
-	var mainWorkoutSection = $('#workoutTable');	
-	console.log(mainWorkoutSection); //Works //This is the table I want to copy.
+  //Get the .main-workout to append the new table at the end of a table
+  var mainWorkoutSection = $('#workoutTable');	
+  console.log(mainWorkoutSection); //Works //This is the table I want to copy.
+//  change the name beofre I append it maybe?
 
-	//Declare where you want to put this new table
-	var exerciseTable = $('#workoutTable');
-	mainWorkoutSection.clone().appendTo('.main-workout'); //works
+  //Declare where you want to put this new table
+  var exerciseTable = $('#workoutTable');
+  //Give new table a nother id so you can track it with a different id if you need to.
+  
+  exerciseTable.addClass( 'addedTable'); //Used to help identify later workouts
+  mainWorkoutSection.clone().appendTo('.main-workout'); //works
+  
 
-
-
-	//Get the name of the workout and change the caption of it.
-	var workoutCaption = $("#workoutTableCaption").val();
-	console.log(workoutCaption); //Need to append the workout name value to the caption
-	$('#workoutTableCaption').val(workoutName);
+  //Add a class to the cloned table and then use that new id/class to change thecaption
 
 
 
 
 
 
+  //Get the name of the workout and change the caption of it.
+  var workoutCaption = $("#workoutTableCaption").text();
+  console.log(workoutCaption); //Need to append the workout name value to the caption
+  $('#workoutTableCaption').text(workoutName); //Works, but on the first one only.
+  //Need this to change the one that just dropped, not the original one.
+  
+  
+  //Change the naming scheme where it will only change the name of the one beneath it.
 
 
-	//when added the table will slide into place
-	var tableSlide = $('#workoutTable');
 
-	//added animatino for when the new table is added
-	tableSlide.className = tableSlide.className + " animated bounceInLeft";
+
+
+
+
+  //when added the table will slide into place
+  var tableSlide = $('#workoutTable');
+
+  //added animatino for when the new table is added
+  tableSlide.className = tableSlide.className + " animated bounceInLeft";
 
 }
-
 
 
 /**************************************
@@ -144,6 +149,20 @@ Random Junk
 **************/
 
 //Stuff I test out to see if it works. Real basic. If it does, then I move it up the latter. If it doesn't... Well. Lets not talk about that.
+
+
+function forLoop() {
+  console.log("Begin Function");
+  
+for ( var x = 0; x < 10; x++) {
+    console.log("workoutTable" + x);
+  }
+}
+
+if (e > 0 ) {
+  
+}
+  
 
 
 
