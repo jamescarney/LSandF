@@ -1,0 +1,31 @@
+/******************************************************************************
+General
+******************************************************************************/
+html {
+  backface: #eee; }
+
+ul {
+  list-style: none; }
+
+.col-centered {
+  float: none;
+  margin: 0 auto; }
+
+table {
+  padding: 10px; }
+
+.tableCaption {
+  font-size: 16px;
+  padding: 10px; }
+
+/******************************************************************************
+Profile Info
+******************************************************************************/
+.edit-btn {
+  display: none; }
+
+.edit-stat:hover .edit-btn {
+  display: inline; }
+
+.blue {
+  color: blue; }

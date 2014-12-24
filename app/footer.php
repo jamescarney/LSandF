@@ -23,15 +23,10 @@
     <!-- JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="bower_components/foundation/js/vendor/jquery.js"></script>
-    <script src="bower_components/foundation/js/vendor/fastclick.js"></script>
-    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>    
 
-    <!-- Core JS for Foundation -->
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+    <!-- Core JS for Bootstrap -->
+    <script src="bower_components/bootstrao/dist/js/bootstrap.min.js"></script>
     
   </body>
 </html>
