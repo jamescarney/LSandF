@@ -21,7 +21,7 @@
       </div>
       <div class="workoutTable main-workout">
         <table id="workoutTable" class="table table-striped table-hover animated bounceInLeft">
-          <caption class="text-center tableCaption"><span id="workoutTableCaption">Deadlift</span> <a href="#" onClick="addSet()"><span class="glyphicon glyphicon-plus"></span></a><a href="#" onClick="subtractSet()"><span class="glyphicon glyphicon-minus"></span></a></caption>
+          <caption class="text-center tableCaption"><span id="workoutTableCaption">Deadlift</span> <a href="#" class="addSet" id="addSet"><span class="glyphicon glyphicon-plus"></span></a><a href="#" class="subtractSet" id="subtractSet" ><span class="glyphicon glyphicon-minus"></span></a></caption>
          <thead>
            <tr>
              <th>Set</th>

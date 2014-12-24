@@ -114,71 +114,51 @@ Can get the caption, but it changing only the original table, not the one that
 has been cloned
 */
 
-
-$('#workoutInput').change(function(workoutName) {
-
-  console.log("Begin function");
-  //Get name of workout from workoutform
-  workoutName = $('#workoutInput').val();
-  console.log(workoutName); //Works
-
-  //Get the .main-workout to append the new table at the end of a table
-  var mainWorkoutSection = $('#workoutTable');	
-  console.log(mainWorkoutSection); //Works //This is the table I want to copy.
-//  change the name beofre I append it maybe?
-
-  //Declare where you want to put this new table
-  var exerciseTable = $('#workoutTable');
-  //Give new table a nother id so you can track it with a different id if you need to.
+$('#workoutInput').change(function(){
+  console.log('Begin Function');
   
-  exerciseTable.addClass( 'addedTable'); //Used to help identify later workouts
-  mainWorkoutSection.clone().appendTo('.main-workout'); //works
+  //Get the name of the workout being called
+  var workoutName = $('#workoutInput').val();
+  if(workoutName === '') {
+    alert("Input Something");
+  } else {
+  console.log(workoutName);
+  //Add a new table
+    //Append to end of the group of tables and make it have the workoutName in the caption
+  var newTable = $('.main-workout').append('<table class="table table-striped table-hover animated bounceInLeft"><caption class="text-center tableCaption"><span id="workoutTableCaption">' + workoutName +'</span> <a href="#" class="addSet"><span class="glyphicon glyphicon-plus"></span></a><a href="#" onClick="subtractSet()"><span class="glyphicon glyphicon-minus"></span></a></caption><thead><tr><th>Set</th><th>Reps</th><th>Weight</th></tr></thead><tbody id="tableOne"><tr><td>1</td><td><input type="number"></td><td><input type="number"></td></tr><tr><td>2</td><td><input type="number"></td><td><input type="number"></td></tr><tr id="lastRow"><td>3</td><td><input type="number"></td><td><input type="number"></td></tr></tbody></table>');
+  newTable.addClass('.table');
   
-  //Add a class to the cloned table and then use that new id/class to change thecaption
-
-  //Get the name of the workout and change the caption of it.
-  var workoutCaption = $("#workoutTableCaption").text();
-  console.log(workoutCaption); //Need to append the workout name value to the caption
-  $('#workoutTableCaption').text(workoutName); //Works, but on the first one only.
-  //Need this to change the one that just dropped, not the original one.
-  
-  
-  //Change the naming scheme where it will only change the name of the one beneath it.
-
-  //when added the table will slide into place
-  var tableSlide = $('#workoutTable');
-
-  //added animatino for when the new table is added
-  tableSlide.className = tableSlide.className + " animated bounceInLeft";
-
+  console.log('End Function');
+  }
 });
+
+//Works, but doesn't look like the classes are carrying over from the previous table. Classes for the plus and minus is what I am talking about.
+
+
 
 
 /**************************************
 Add workout sets to a table
 **************************************/
 //Not functional yet. Need to would on this later
-function addSet() {
-  console.log("begin function");
+$('.addSet').click(function() {
+  console.log('begin');
+//  get the amount of tr there are and then add one
   
-  var lastRow = $('tr#lastRow').html();
-  console.log(lastRow);
-  var firstCol = $('td:first-of-type').html();
-  console.log(firstCol);
-  lastRow.clone().add().appendTo("#tableOne");
-  
-//  use the replaceWith function to replace the set # with the number of times the + button is clicked
-//  maybe use the total number of rows
-  
-  console.log('end function');
-}
+  var setNumber = $('tbody').children().length + 1;
+//  Add another set
+  $('tbody').append('<tr id="lastRow"><td>' + setNumber + '</td><td><input type="number"></td><td><input type="number"></td></tr>');
+//  Change the set number to the last one there
+  console.log('end');
+});
 
-function subtractSet() {
-  console.log('begin function');
-	alert("Took off a set!");
-	console.log("Take off a row from the table.");
-  console.log('end function');
-}
+$('#subtractSet').click(function() {
+  console.log('begin');
+  
+  $('tbody').remove(//last tr);
+  
+  console.log('end');
+});
 
 
 
