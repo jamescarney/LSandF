@@ -27,7 +27,7 @@ Profile Page
 
 
 
-$('.edit-btn').toggle(function(){
+$('.edit-btn').click(function(){
   console.log('Begin Function');
   var statList = $('.statList');
   console.log(statList);
@@ -36,9 +36,7 @@ $('.edit-btn').toggle(function(){
   statListBullets.replaceWith('<input type="text">').toggle();
   
   console.log('End Function');  
-}, function() {
-    console.log("Begin toggle function");
-    console.log("End Toggle Function");
+
   
 });
 
@@ -155,7 +153,7 @@ $('.addSet').click(function() {
 $('#subtractSet').click(function() {
   console.log('begin');
   
-  $('tbody').remove(//last tr);
+  //$('tbody').remove(//last tr);
   
   console.log('end');
 });
