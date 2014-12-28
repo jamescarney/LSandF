@@ -18,8 +18,6 @@ var workoutCaption; //Name of workout when someone adds an exercise
 
 
 
-
-
 /******************************************************************************
 Profile Page
 ******************************************************************************/
@@ -36,27 +34,13 @@ $('.edit-btn').click(function(){
   statListBullets.replaceWith('<input type="text">').toggle();
   
   console.log('End Function');  
-
-  
 });
-
-//function editStat() {
-//  console.log('Begin Function');
-//  var statList = $('.statList');
-//  console.log(statList);
-//  var statListBullets = $('ul.statList .stat');
-//  console.log(statListBullets);
-//  statListBullets.replaceWith('<input type="text">').toggle();
-//  
-//  console.log('End Function');
-//}
 
 
 
 /******************************************************************************
 BMI Calc
 ******************************************************************************/
-
 
 
 
@@ -94,11 +78,6 @@ function bmiCalc(height, weight) {
 	
 	console.log('end program');
 }
-
-
-
-
-
 
 
 
@@ -160,22 +139,30 @@ $('#subtractSet').click(function() {
 
 
 
+/******************************************************************************
+Timer
+******************************************************************************/
 
-/**************
-Random Junk
-**************/
+//Select a time and then have the timer show that time
+//When start is clicked, start the count down
 
-//Stuff I test out to see if it works. Real basic. If it does, then I move it up the latter. If it doesn't... Well. Lets not talk about that.
-
-
+$('#selectTime').change(function(){
+  console.log('Begin Function');
+  var minPlaceHolder = $('#minCounter').val();
+  var secPlaceHolder = $('#secCounter');
+  if($(this).val() == 30){
+    console.log('30 was selected');
+  } else if($(this).val() == 45 ){
+    console.log('45 was selected');
+  } else if($(this).val() == 60){
+    console.log('1 min was selected');
+  } else {
+    console.error('Try again, nothing selected');
+  }
   
+  console.log('End Function');
+});
 
-
-
-
-
-
-// addWorkoutTable(this.form)
 
 
 

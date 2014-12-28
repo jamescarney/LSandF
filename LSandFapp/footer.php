@@ -1,4 +1,5 @@
     <footer>
+     <a href="http://lifestylestrengthandfitness.com">Home Page</a>
       <p class="muted text-center">&copy; 2014 &middot; Lifestyle Strength and Fitness</p>
     </footer>
     

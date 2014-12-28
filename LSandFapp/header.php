@@ -43,10 +43,10 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Assessments <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="bmi.php">BMI</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+            <li><a href="heartrate.php">Heart Rate</a></li>
+            <li><a href="#">VO2 Max</a></li>
             <li class="divider"></li>
-            <li><a href="workout.php">Make your own</a></li>
+            <li><a href="#">Other Stuff</a></li>
           </ul>
         </li>
         <li class="dropdown">

@@ -11,9 +11,8 @@
         </div>
       </div>
     </div>
+    <h2>Recent Workouts</h2>
     <div class="recentWorkouts">
-      <h2>Recent Workouts</h2>
-      
       <a href="workout.php"><img src="http://placehold.it/200x200" alt=""></a>
       <a href="workout.php"><img src="http://placehold.it/200x200" alt=""></a>
       <a href="workout.php"><img src="http://placehold.it/200x200" alt=""></a>
@@ -22,18 +21,35 @@
       <a href="workout.php"><img src="http://placehold.it/200x200" alt=""></a>
       <a href="workout.php"><img src="http://placehold.it/200x200" alt=""></a>
     </div>
-    <div class="totalStats">
-     <div class="edit-stat">
-       <h2>Total Stats <button class="btn btn-default edit-btn">Edit</button> </h2>
-      
+    <div class="row">
+       <div class="col-sm-6">
+        <div class="edit">
+          <h2>Total Stats <button class="btn btn-default edit-btn">Edit</button> </h2>
+        </div>
+        <div class="totalStats">
+          <ul class="lead statList">
+            <li>Weight <i class="fa fa-angle-right"></i> <span class="stat statWeight">215 LBS</span></li>
+            <li>Height <i class="fa fa-angle-right"></i> <span class="stat statHeight">6' 3"</span></li>
+            <li>BMI <i class="fa fa-angle-right"></i> <span class="stat statBMI">27</span></li>
+            <li>Stuff</li>
+            <li>Stuff</li>
+          </ul>
+        </div>
       </div>
-      <ul class="lead statList">
-        <li>Weight <i class="fa fa-angle-right"></i> <span class="stat statWeight">215 LBS</span></li>
-        <li>Height <i class="fa fa-angle-right"></i> <span class="stat statHeight">6' 3"</span></li>
-        <li>BMI <i class="fa fa-angle-right"></i> <span class="stat statBMI">27</span></li>
-        <li>Stuff</li>
-        <li>Stuff</li>
-      </ul>
+      <div class="col-sm-6">
+        <div class="edit">
+          <h2>Goals <button class="btn btn-default edit-btn">Edit</button> </h2>
+        </div>
+        <div class="goals">
+          <ul class="lead goalsList pullright">
+            <li>Weight</li>
+            <li>Bench Max</li>
+            <li>Squat Max</li>
+            <li>Deadlift Max</li>
+            <li>Clean Max</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 

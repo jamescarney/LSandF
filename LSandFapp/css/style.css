@@ -27,8 +27,16 @@ Profile Info
 .edit-btn {
   display: none; }
 
-.edit-stat:hover .edit-btn {
+.edit:hover .edit-btn {
   display: inline; }
 
-.blue {
-  color: blue; }
+.recentWorkouts a {
+  padding-bottom: 10px; }
+  .recentWorkouts a img {
+    padding: 10px; }
+
+/******************************************************************************
+Heart Rate
+******************************************************************************/
+.selectTime {
+  padding-bottom: 10px; }
