@@ -13,6 +13,7 @@ var workoutCaption; //Name of workout when someone adds an exercise
 
 
 
+
 // workoutName = document.workoutFormName.value;
 
 
@@ -148,20 +149,25 @@ Timer
 
 $('#selectTime').change(function(){
   console.log('Begin Function');
-  var minPlaceHolder = $('#minCounter').val();
-  var secPlaceHolder = $('#secCounter');
+  
   if($(this).val() == 30){
     console.log('30 was selected');
+    $('#secCounter').text('30');
   } else if($(this).val() == 45 ){
     console.log('45 was selected');
+    $('#secCounter').text('45');
   } else if($(this).val() == 60){
     console.log('1 min was selected');
+    $('#minCounter').text('1');
+    $('#secCounter').text('00');
   } else {
     console.error('Try again, nothing selected');
   }
   
   console.log('End Function');
 });
+
+var test = $('#test').countDown();
 
 
 

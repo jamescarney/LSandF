@@ -24,9 +24,10 @@
         <div class="counter">
           <span id="minCounter">00</span>:
           <span id="secCounter">00</span>
-          <span>Seconds</span><br>
+          <br>
           <input type="button" value="Start" id="counterStart">
           <input type="button" value="Reset" id="counterReset">
+          <span id="test"></span>
         </div>
       </div>
     </div>
