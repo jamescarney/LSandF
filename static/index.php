@@ -1,64 +1,34 @@
 <?php include('inc/header.php'); ?>
-    <!-- slider -->
     
-    <div class="slider large-5 large-centered column">
-      <h1>The slider will go here.</h1>  
-      <div>
-          <h3>First Image</h3>
-        <!-- <img src="img/deadlift.jpg" alt=""> -->
+    <div class="jumbotron">
+     <h1>Sign Up for latest Tricks and Tips</h1>
+     <p>Get fitness tips, nutrition tips and a lot more. I'm just too tired to care right now.</p>
+      <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
       </div>
-      <div>
-        <h3>Second Image</h3>
-        <!-- <img src="img/HIIT-600x363.jpg" alt=""> -->
+      <div class="modal-body">
+        <form action="">
+          <label for="email"><input type="email" placeholder="Email">Email</label>
+        </form>
       </div>
-      <div>
-        <h3>Third Image</h3>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Submit</button>
       </div>
     </div>
-     <!-- </slider> -->
-    <div class="row">
-      <div class="panel small-12 column">
-        <div class="call-to-action">
-          <h1>Get your Free Fitness Tracker</h1>
-          <p class="lead">Sign up today so you can start tracking your weight, blood pressure, heart rate, workouts, mile times and more!</p>
-          <a href="#" data-reveal-id="myModal" class="button success">Signup Today!</a>
-  
-          <div id="myModal" class="reveal-modal" data-reveal>
-            <h2>Free Fitness Tracker </h2>
-            <p class="lead">Looks like you are ready to take your health and fitness serious!</p>
-            <p>I'm a cool paragraph that lives inside of an even cooler modal. Wins!</p>
-            <form>
-              <div class="row">
-                <div class="col-sm-8">
-                  <div class="row">
-                    <div class="col-sm-3 columns">
-                      <label for="right-label" class="right">Name:</label>
-                    </div>
-                    <div class="col-sm-9 columns">
-                      <input type="text" id="right-label" placeholder="James">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-8">
-                  <div class="row">
-                    <div class="col-sm-3 columns">
-                      <label for="right-label" class="right">Email</label>
-                    </div>
-                    <div class="col-sm-9 columns">
-                      <input type="text" id="right-label" placeholder="James@lifestylestrengthandfitness.com">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-8"><a href="#" class="button success">Sign Up Here</a></div>
-              </div>
-            </form>
-            <a class="close-reveal-modal">&#215;</a>
-
-          </div>
-          <!-- / modal -->
-        </div>
-      </div>
-    </div><!-- / panel -->
+  </div>
+</div>
+    </div><!-- /row -->
 
     <div class="wrapper">
       <div class="row featured" data-equalizer>
@@ -82,4 +52,5 @@
         </div> 
       </div>
       </div><!-- /.container -->
+
       <?php include('inc/footer.php'); ?>

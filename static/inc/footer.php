@@ -54,26 +54,15 @@
         	<p class="copy-footer">&copy; 2014 | Lifestyle Strength and Fitness</p>
     		</div>
       </footer>
+      </div> <!-- /container -->
 
 
     <!-- JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="bower_components/foundation/js/vendor/jquery.js"></script>
-    <script src="bower_components/foundation/js/vendor/fastclick.js"></script>
-    <script src="slick/slick/slick.min.js"></script>
 
     <!-- Core JS for Foundation -->
-    <script src="bower_components/foundation/js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
-    <script>
-      $(document).ready(function(){
-        $('.slider').slick({
-        $('.single-item').slick();
-        });
-      });
-    </script>
+    <script src='bower_components/bootstrap/dist/js/bootstrap.min.js'></script>
   </body>
 </html>
